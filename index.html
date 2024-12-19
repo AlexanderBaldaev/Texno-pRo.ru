@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texno-PRO</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header-top">
+    <div class="magazin">
+      <span class="location">&#128205; Магазины</span>
+      <span class="phone">+7 (988) 888 88 88</span>
+    </div>
+    <nav>
+      <a href="#action-free">Акции</a>
+      <a href="#">Гарантия</a>
+      <a href="#">Доставка и оплата</a>
+      <a href="name.html" class="smooth-transition">О нас</a>
+      <a href="contacts.html" class="smooth-transition">Контакты</a>
+    </nav>
+  </header>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>Texno-PRO</h1>
+        <p>магазин по продаже видеотехники</p>
+      </div>
+      <div class="icons">
+        <div class="search-bar">
+          <input type="text" placeholder="Поиск" class="search-input" />
+          <button class="search-button">
+            <img src="https://img.icons8.com/ios-glyphs/20/search--v1.png" alt="Поиск" />
+          </button>
+        </div>
+        <div class="login-cart">
+          <div class="login">
+            <button class="icon-button" onclick="openLoginPopup()">
+              <img src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="Войти" />
+            </button>
+          </div>
+          <div class="cart">
+            <a href="">
+              <button class="icon-button">
+                <img src="https://img.icons8.com/ios-glyphs/30/shopping-cart.png" alt="Корзина" />
+              </button>
+          </div>
+          </a>
+        </div>
+        <div id="login-popup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closeLoginPopup()">&times;</span>
+            <h2>Войти / Зарегистрироваться</h2>
+            <form id="login-form">
+              <div class="form-group">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required placeholder="Введите логин" />
+              </div>
+              <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required placeholder="Введите пароль" />
+              </div>
+              <button type="submit" class="submit-button">Войти</button>
+              <div class="separator">
+                <hr />
+                <span>Или</span>
+              </div>
+              <button type="button" class="google-button">
+                <img src="https://img.icons8.com/color/24/google-logo.png" alt="Google" class="google-icon" />
+                Войти через Google
+              </button>
+              <div class="register-link">
+                <p>
+                  Нет аккаунта?
+                  <a href="#" onclick="toggleForm('register')">Зарегистрироваться</a>
+                </p>
+              </div>
+            </form>
+            <form id="register-form" style="display: none">
+              <div class="form-group">
+                <label for="reg-username">Логин:</label>
+                <input type="text" id="reg-username" name="reg-username" required placeholder="Введите логин" />
+              </div>
+              <div class="form-group">
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="reg-email" required placeholder="Введите email" />
+              </div>
+              <div class="form-group">
+                <label for="reg-password">Пароль:</label>
+                <input type="password" id="reg-password" name="reg-password" required placeholder="Введите пароль" />
+              </div>
+              <button type="submit" class="submit-button">
+                Зарегистрироваться
+              </button>
+              <div class="separator">
+                <hr />
+                <span>Или</span>
+              </div>
+              <button type="button" class="google-button">
+                <img src="https://img.icons8.com/color/24/google-logo.png" alt="Google" class="google-icon" />
+                Зарегистрироваться через Google
+              </button>
+              <div class="register-link">
+                <p>
+                  Уже есть аккаунт?
+                  <a href="#" onclick="toggleForm('login')">Войти</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+  </header>
+  <section class="promo-slider">
+    <div class="slider-wrapper">
+      <div class="slider-slide active">
+        <img src="img/533ff3c7ee835fd6899adb1fc4509993 1.png" alt="Техника для дома">
+      </div>
+      <div class="slider-slide">
+        <img src="img/533ff3c7ee835fd6899adb1fc4509993 1.png" alt="Еще техника для дома">
+      </div>
+    </div>
+  </section>
+  <section class="products">
+    <h1>Популярные товары</h1>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="img/2112dad8fea93d950866fcec02b3083f 1.png" alt="Стиральная машинка" width="150px">
+        <h2>Apple iPhone 13, 128 ГБ, «тёмная ночь»</h2>
+        <div class="price-row">
+          <p class="price">67 990 ₽ </p>
+          <button><a href="Tovar.html"></a></button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/2bz5l70t3j2n6j9d1rfqawl33urcyzl7 1.png" alt="Стиральная машинка">
+        <h2>Беспроводные наушники Apple AirPods Pro</h2>
+        <div class="price-row">
+          <p class="price">29 990 ₽</p>
+          <button><a href="Tovar.html"></a></button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/25789.970 1.png" alt="Стиральная машинка" width="205p6x">
+        <h2>Умная колонка Яндекс.Станция 2 красная</h2>
+        <div class="price-row">
+          <p class="price">13 490 ₽</p>
+          <button><a href="Tovar.html"></a></button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/95405 (1) 1.png" alt="Стиральная машинка" width="180px">
+        <h2>Фен-стайлер Dyson Airwrap Complete Long HS05 </h2>
+        <div class="price-row">
+          <p class="price">43 990 ₽</p>
+          <button><a href="Tovar.html"></a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <h1 class="title">Популярные категории</h1>
+    <div class="grid">
+      <div class="card yellow big-card">
+        <h2>Смартфоны</h2>
+        <ul class="brands">
+          <li>Apple</li>
+          <li>Asus</li>
+          <li>Google</li>
+          <li>Honor</li>
+          <li>Huawei</li>
+          <li>Infinix</li>
+        </ul>
+        <img src="img/2112dad8fea93d950866fcec02b3083f 1.png" alt="Смартфоны">
+      </div>
+      <div class="card pink">
+        <h2>Ноутбуки</h2>
+        <p>87 товаров</p>
+        <img src="img/Remove-bg.ai_1719163601094 1.png" alt="Ноутбуки">
+      </div>
+      <div class="card purple">
+        <h2>Ауди</h2>
+        <p>170 товаров</p>
+        <img src="img/Remove-bg.ai_1719163494093 1.png" alt="Ауди">
+      </div>
+      <div class="card light-purple">
+        <h2>Отдых и развлечения</h2>
+        <p>311 товаров</p>
+        <img src="img/Remove-bg.ai_1719163399120 1.png" alt="Отдых и развлечения">
+      </div>
+      <div class="card blue">
+        <h2>Видеотехника</h2>
+        <p>17 товаров</p>
+        <img src="img/Remove-bg.ai_1719163718760 1.png" alt="Видеотехника">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1 id="action-free">Акции</h1>
+    <div class="promo-cards">
+      <div class="promo-card">
+        <img src="img/62d6fe95f8916eb4bcbe13c173d346d8 1.png" alt="Стиральная машина">
+        <div class="content">
+          <h2>Скидка 10% на PlayStation5</h2>
+          <p>до 10 августа</p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <img src="img/49949494 1.png" alt="Бонус новым клиентам">
+        <div class="content">
+          <h2>Распродажа Sony Playstation5</h2>
+          <p>до 1 июля</p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <img src="img/59705770945 1.png" alt="Бытовая техника">
+        <div class="content">
+          <h2>Распродажа Бытовой техники с скидкой 10%</h2>
+          <p>до 19 июля</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <h2 class="logo-main">Texno-PRO</h2>
+        <p class="logo-sub">магазин по продаже видеотехники</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Клиентам</h5>
+          <ul class="list-unstyled">
+            <li><a href="name.html">Trade-in</a></li>
+            <li><a href="#">Обмен, Возврат и ремонт</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>О комании</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">контакты</a></li>
+            <li><a href="name.html">ваканции</a></li>
+            <li><a href="#">о нас</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Свяжитесь с нами</h5>
+          <p>Email: Alexanderbaldaev7@gmail.com</p>
+          <p>Телефон: +7 996 259-50-89</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023-2024 Texno-PRO.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

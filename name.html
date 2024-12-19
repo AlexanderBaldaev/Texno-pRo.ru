@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texno-PRO</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header-top">
+    <div class="magazin">
+      <span class="location">&#128205; Магазины</span>
+      <span class="phone">+7 (988) 888 88 88</span>
+    </div>
+    <nav>
+      <a href="#">Акции</a>
+      <a href="#">Гарантия</a>
+      <a href="#">Доставка и оплата</a>
+      <a href="name.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <h1><a href="index.html">Texno-PRO</a></h1>
+        <p>магазин по продаже видеотехники</p>
+      </div>
+      <div class="icons">
+        <div class="search-bar">
+          <input type="text" placeholder="Поиск" class="search-input" />
+          <button class="search-button">
+            <img src="https://img.icons8.com/ios-glyphs/20/search--v1.png" alt="Поиск" />
+          </button>
+        </div>
+        <div class="login-cart">
+          <div class="login">
+            <button class="icon-button" onclick="openLoginPopup()">
+              <img src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="Войти" />
+            </button>
+          </div>
+          <div class="cart">
+            <div class="cart">
+              <a href="">
+                <button class="icon-button">
+                  <img src="https://img.icons8.com/ios-glyphs/30/shopping-cart.png" alt="Корзина" />
+                </button>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div id="login-popup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closeLoginPopup()">&times;</span>
+            <h2>Войти / Зарегистрироваться</h2>
+            <form id="login-form">
+              <div class="form-group">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required placeholder="Введите логин" />
+              </div>
+              <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required placeholder="Введите пароль" />
+              </div>
+              <button type="submit" class="submit-button">Войти</button>
+              <div class="separator">
+                <hr />
+                <span>Или</span>
+              </div>
+              <button type="button" class="google-button">
+                <img src="https://img.icons8.com/color/24/google-logo.png" alt="Google" class="google-icon" />
+                Войти через Google
+              </button>
+              <div class="register-link">
+                <p>
+                  Нет аккаунта?
+                  <a href="#" onclick="toggleForm('register')">Зарегистрироваться</a>
+                </p>
+              </div>
+            </form>
+            <form id="register-form" style="display: none">
+              <div class="form-group">
+                <label for="reg-username">Логин:</label>
+                <input type="text" id="reg-username" name="reg-username" required placeholder="Введите логин" />
+              </div>
+              <div class="form-group">
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="reg-email" required placeholder="Введите email" />
+              </div>
+              <div class="form-group">
+                <label for="reg-password">Пароль:</label>
+                <input type="password" id="reg-password" name="reg-password" required placeholder="Введите пароль" />
+              </div>
+              <button type="submit" class="submit-button">
+                Зарегистрироваться
+              </button>
+              <div class="separator">
+                <hr />
+                <span>Или</span>
+              </div>
+              <button type="button" class="google-button">
+                <img src="https://img.icons8.com/color/24/google-logo.png" alt="Google" class="google-icon" />
+                Зарегистрироваться через Google
+              </button>
+              <div class="register-link">
+                <p>
+                  Уже есть аккаунт?
+                  <a href="#" onclick="toggleForm('login')">Войти</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+  </header>
+  <section class="promo-section">
+    <div class="promo-text">
+      <h1>
+        С нашей техникой дом становится больше, чем местом для жизни — это
+        пространство, где мечты об идеальном быте воплощаются каждый день.
+      </h1>
+      <button class="promo-button"><a href="catalog.html">Все товары</a></button>
+    </div>
+    <div class="promo-image">
+      <img src="img/3435.png" alt="Техника для дома" />
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about-container">
+      <h1>O Texno-PRO</h1>
+      <div class="about-text">
+        "Texno-PRO" — одна из крупнейших сетей магазинов электроники и бытовой
+        техники, на рынке с 2023 года. Компания входит в топ-5 крупнейших
+        интернет-магазинов России. Texno-PRO продает порядка 111 тысяч
+        наименований цифровой и бытовой техники, электроники, а также
+        предоставляет широкий спектр дополнительных услуг для удобства своих
+        клиентов. В настоящее время у компании более 830 офлайн-магазинов и
+        пунктов выдачи заказов, расположенных в 62 регионах России. Эти точки
+        продаж оснащены современным оборудованием, включая терминалы для
+        самостоятельного оформления заказов, кассы оплаты и окна выдачи
+        товаров. Это позволяет покупателям быстро и эффективно совершать
+        покупки, не испытывая трудностей с процессом обслуживания. В портфеле
+        услуг Texno-PRO также представлены такие услуги, как сборка компьютеров и
+        серверов под заказ, аутсорсинг ИТ-инфраструктуры, монтаж систем
+        видеонаблюдения, установка бытовой и климатической техники, услуги
+        страхования, покупка товаров в лизинг и другие. Это делает компанию не
+        только местом для покупки техники, но и надежным партнером для решения
+        различных задач в области информационных технологий и бытового
+        комфорта. У компании более 225 тысяч корпоративных клиентов, что
+        свидетельствует о высокой степени доверия со стороны бизнеса. Texno-PRO
+        активно развивает сотрудничество с различными организациями, предлагая
+        им комплексные решения для автоматизации рабочих процессов и повышения
+        эффективности работы.
+      </div>
+    </div>
+  </section>
+  <div class="about-banner">
+    <img src="img/banner-2.png" alt="Banner img" class="banner-image">
+  </div>
+  <div class="reviews-section">
+    <h2>Отзывы от наших покупателей</h2>
+    <div class="reviews-container">
+      <div class="review-card">
+        <h3>Нийлонов Александр</h3>
+        <div class="stars">★★★★★</div>
+        <p>Магазин порадовал конкурентными ценами и регулярными скидками. Здесь я нашел камеру по самой выгодной цене на
+          рынке. Оформление заказа прошло без проблем, и товар был доставлен вовремя. Отличное соотношение цены и
+          качества!</p>
+      </div>
+      <div class="review-card">
+        <h3>Михайлюк Артем</h3>
+        <div class="stars">★★★★★</div>
+        <p>Недавно приобрел камеру в этом магазине и был приятно удивлен профессионализмом консультантов. Они помогли
+          выбрать идеальную модель для моих нужд. Ассортимент товаров впечатляет, здесь можно найти все от камер до
+          различных аксессуаров. Определенно буду покупать здесь снова!</p>
+      </div>
+      <div class="review-card">
+        <h3>Кургулиев Руслан</h3>
+        <div class="stars">★★★★★</div>
+        <p>Очень понравился выбор видеотехники в этом магазине. Сайт удобный и интуитивно понятный, легко найти нужный
+          товар. Заказал аксессуары и несколько видеокамер, все пришло вовремя и без повреждений. Спасибо за отличный
+          сервис!</p>
+      </div>
+      <div class="review-card">
+        <h3>Хийлюн Никита</h3>
+        <div class="stars">★★★★★</div>
+        <p>Хороший магазин с большим ассортиментом видеотехники. Сайт удобный, легко найти нужный товар. Оформление
+          заказа и доставка прошли без проблем. Немного высоковаты цены на некоторые товары, но качество того стоит.
+          Рекомендую.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <h2 class="logo-main">Texno-PRO</h2>
+        <p class="logo-sub">магазин по продаже видеотехники</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Клиентам</h5>
+          <ul class="list-unstyled">
+            <li><a href="name.html">Trade-in</a></li>
+            <li><a href="#">Обмен, Возврат и ремонт</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>О комании</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">контакты</a></li>
+            <li><a href="name.html">ваканции</a></li>
+            <li><a href="#">о нас</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Свяжитесь с нами</h5>
+          <p>Email: Alexanderbaldaev7@gmail.com</p>
+          <p>Телефон: +7 996 259-50-89</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023-2024 Texno-PRO.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
